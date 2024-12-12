@@ -39,6 +39,10 @@ Além disso, o projeto incorpora:
 5. **Persistência de dados:**
    - Salva as alterações realizadas nos registros em um arquivo externo de forma persistente.
 
+6. **Criptografia:**
+   - Cifra e decifra os dados usando Vigenére.
+
+
 ---
 
 ## **Tecnologias Utilizadas**
@@ -46,51 +50,32 @@ Além disso, o projeto incorpora:
 
 ---
 
-## **Classes Criadas no TP3**
+## **Classes Criadas no TP4**
 
-### **1. Classe `ArquivoRotulo`**
-- Constrói o arquivo de rótulos.
-- Implementa o CRUD de rótulos.
-- Métodos para manipulação de rótulos.
+### **1. Classe `Criptografia`**
+- Cifra dados usando Vigenére.
+- Deifra dados usando Vigenére.
 
-### **2. Classe `ElementoLista`**
-- Estrutura da **lista invertida** implementada.
 
-### **3. Classe `Rotulo`**
-- Entidade criada com seus atributos.
-- Métodos de serialização e deserialização.
-- Implementação de `toString` e `print`.
+### **2. Classe `ArquivoLZW`**
+- Compacta (codifica e descodifica) dados usando o algoritmo LZW.
 
-### **4. Classe `TarefaRotulo`**
-- Monta o par `TarefaRotulo`, permitindo a busca de tarefas por rótulo.
 
-### **5. Classe `RotuloTarefa`**
-- Monta o par `RotuloTarefa`, permitindo a busca de tarefas por rótulo.
-
-### **6. Classe `MenuRotulo`**
-- Interface de rótulos acessada no menu do programa.
-
-### **7. Classe `ParNomeIDRotulo`**
-- Relaciona **nome**, **ID** e **rótulos**.
-
-### **8. Classe `ParNomeIDTarefa`**
-- Relaciona **nome**, **ID** e **tarefas**.
 
 ---
 
 ## **Principais Desafios**
-- **Lista invertida:** A implementação dessa estrutura foi uma novidade neste trabalho e exigiu maior atenção.
-- **Árvore B+:** As operações relacionadas ao relacionamento utilizando a Árvore B+ foram menos desafiadoras devido à introdução dessa estrutura no TP2.
+- **Tempo para fazer:** Por ser final de semestre, sofri um pouco com o tempo para fazer o trabalho, mas ainda bem que o professor é muito legal e extendeu a data para entregar :).
 
 ---
 
 ## **Checklist**
-- O índice invertido com os termos das tarefas foi criado usando a classe `ListaInvertida`? **Sim**
-- O CRUD de rótulos foi implementado? **Sim**
-- No arquivo de tarefas, os rótulos são incluídos, alterados e excluídos em uma Árvore B+? **Sim**
-- É possível buscar tarefas por palavras usando o índice invertido? **Sim**
-- É possível buscar tarefas por rótulos usando uma Árvore B+? **Sim**
-- O trabalho está completo? **Sim**
-- O trabalho é original e não é uma cópia de um trabalho de um colega? **Sim**
+Há uma rotina de compactação usando o algoritmo LZW para fazer backup dos arquivos? Sim
+Há uma rotina de descompactação usando o algoritmo LZW para recuperação dos arquivos? Sim
+O usuário pode escolher a versão a recuperar? Sim
+Qual foi a taxa de compressão alcançada por esse backup? 160%
+O trabalho está funcionando corretamente? Tem um problema na hora da escolha dos arquivos dos dados do backup.
+O trabalho está completo? Visto que tem um problema não resolvido, ele não está completo.
+O trabalho é original e não a cópia de um trabalho de um colega? Sim
 
 ---
